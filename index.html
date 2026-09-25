@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#271d35">
+  <title>For Meenu | 21 & Unstoppable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Change personal details in this page and in the CONFIG object in script.js. -->
+  <div class="noise" aria-hidden="true"></div>
+  <div class="floating-decor" aria-hidden="true"><span>✦</span><span>♡</span><span>✦</span><span>♡</span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#birthday" aria-label="Go to birthday reveal"><span>J</span> + <span>M</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#story">Our story</a>
+      <a href="#appreciation">Why you</a>
+      <a href="#letter">The letter</a>
+    </nav>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Play optional music" aria-pressed="false"><span class="music-icon">♫</span><span class="music-label">Music</span></button>
+    <audio id="birthdayMusic" loop src="./music.mp3"></audio>
+  </header>
+
+  <main>
+    <section class="opening" id="opening">
+      <div class="opening-orbit orbit-one"></div><div class="opening-orbit orbit-two"></div>
+      <div class="opening-content">
+        <p class="eyebrow reveal-up">A little something from Jimmy</p>
+        <h1 class="reveal-up delay-1">Hey Meenu... <span>👀</span><br><em>❤️</em></h1>
+        <p class="opening-copy reveal-up delay-2">I made something for you.<br><span>And yes... you have to open it. 😌</span></p>
+        <button class="primary-button reveal-up delay-3" id="openSurprise" type="button">Open your surprise <span>↗</span></button>
+        <p class="scroll-hint reveal-up delay-4">A very important scroll awaits <span>↓</span></p>
+      </div>
+      <div class="opening-mark">21<br><small>for Meenu</small></div>
+    </section>
+
+    <section class="hero section-dark" id="birthday">
+      <div class="hero-glow"></div><div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow light">26 September · her day</p>
+        <h2>Happy <span>21st</span><br>Birthday, Meenu!</h2>
+        <p class="hero-subtitle">Welcome to 21 <span>🥂</span> <span>✦</span></p>
+        <p class="hero-note">A new chapter, the same wonderful you.<br>Here’s to everything waiting for you.</p>
+        <div class="hero-badge"><span>★</span> Certified 21-year-old · 100% iconic <span>★</span></div>
+        <div class="hero-actions"><a class="primary-button light-button" href="#story">Begin the tour <span>↓</span></a><button class="ghost-button" id="sparkleButton" type="button">Make it sparkle ✦</button></div>
+      </div>
+      <div class="hero-side-note">birthday<br>edition <span>2026</span></div>
+    </section>
+
+    <section class="photo-section section-paper" id="photos">
+      <div class="section-heading"><p class="eyebrow">The little archive</p><h2>A little piece<br>of <em>our story.</em></h2><p class="heading-note">Some moments deserve to stay forever.<br>And honestly, three photos felt like a good start.</p></div>
+      <div class="photo-grid">
+        <figure class="photo-card card-a reveal"><button class="photo-button" type="button" data-full="./photo1.jpg"><img src="./photo1.jpg" alt="A memory of Meenu"><span class="view-label">View memory ↗</span></button><figcaption>One more memory for the collection <b>♡</b></figcaption></figure>
+        <figure class="photo-card card-b reveal"><button class="photo-button" type="button" data-full="./photo2.jpg"><img src="./photo2.jpg" alt="A favorite photo of Meenu"><span class="view-label">View memory ↗</span></button><figcaption>A little piece of our story <b>✦</b></figcaption></figure>
+        <figure class="photo-card card-c reveal"><button class="photo-button" type="button" data-full="./photo3.jpg"><img src="./photo3.jpg" alt="A happy memory of Meenu"><span class="view-label">View memory ↗</span></button><figcaption>Some moments deserve to stay forever <b>♡</b></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="story section-ink" id="story">
+      <div class="story-number">01 <span>/ 05</span></div>
+      <div class="story-layout"><div><p class="eyebrow coral">The good part</p><h2>More than<br>a year of <em>us.</em></h2></div><div class="story-copy"><p>Some friendships arrive quietly and then, before you realize it, become part of the way you get through life.</p><p>In more than a year of knowing you, you have been someone I could talk to when things were difficult. You have helped, listened, cared, and somehow made space for both the serious conversations and the completely random ones.</p><p>That kind of friendship matters to me more than I probably say. I’m genuinely grateful to have you in my life, Meenu.</p><span class="signature">— Jimmy</span></div></div>
+    </section>
+
+    <section class="appreciation section-lilac" id="appreciation">
+      <div class="section-heading centered"><p class="eyebrow">A small appreciation list</p><h2>A few things I<br><em>appreciate about you.</em> 🌷</h2></div>
+      <div class="appreciation-grid">
+        <article class="value-card reveal"><span class="card-number">01</span><span class="card-icon">♡</span><h3>You listen</h3><p>You have been someone I can talk to when things aren’t going right.</p></article>
+        <article class="value-card reveal"><span class="card-number">02</span><span class="card-icon">✦</span><h3>You care</h3><p>You genuinely care about people, and it shows in the little things.</p></article>
+        <article class="value-card reveal"><span class="card-number">03</span><span class="card-icon">↗</span><h3>You help</h3><p>You’ve helped me through difficult moments, and that is something I won’t forget.</p></article>
+        <article class="value-card reveal"><span class="card-number">04</span><span class="card-icon">☾</span><h3>You understand</h3><p>Sometimes you understand what’s going on even when I haven’t explained everything.</p></article>
+        <article class="value-card reveal"><span class="card-number">05</span><span class="card-icon">✧</span><h3>You make things better</h3><p>Even a difficult day can feel a little easier after talking to you.</p></article>
+        <article class="value-card highlight reveal"><span class="card-number">06</span><span class="card-icon">😂</span><h3>You’re Meenu</h3><p>And honestly... there is only one of you.</p></article>
+      </div>
+    </section>
+
+    <section class="psych section-coral">
+      <div class="psych-tape">OFFICIAL-ish</div><div class="section-heading"><p class="eyebrow">A professional assessment</p><h2>Meenu: Psychologist<br>by profession... <em>😂</em></h2><p class="heading-note">Jimmy’s unofficial support department.</p></div>
+      <div class="diagnosis-layout"><div class="stats-list"><div><span>Random conversations</span><b>∞</b></div><div><span>Serious conversations</span><b>A LOT</b></div><div><span>“What’s wrong?” moments</span><b>Too many 😂</b></div><div><span>Jimmy asking for advice</span><b>Frequently</b></div><div><span>Meenu being right</span><b>Unfortunately... often 😭</b></div><div><span>Jimmy following advice</span><b>Still loading... ⏳</b></div></div><div class="diagnosis-card"><span>CASE FILE · 21.09</span><p>Official diagnosis</p><h3 id="diagnosisText">Jimmy is suffering from a severe case of having an amazing best friend.</h3><button class="diagnosis-button" id="diagnosisButton" type="button">Run the scan 🧠</button><div class="stamp">VALID<br>FOREVER</div></div></div>
+    </section>
+
+    <section class="chat-section section-paper"><div class="section-heading centered"><p class="eyebrow">Fictional examples, obviously</p><h2>A totally serious conversation<br>between <em>Jimmy & Meenu.</em> 😂</h2></div><div class="chat-window reveal"><div class="chat-top"><span class="online-dot"></span><div><b>Meenu</b><small>best friend · probably diagnosing Jimmy</small></div><span class="chat-dots">•••</span></div><div class="messages"><div class="message meenu">Are you okay?<small>Meenu · 10:42 PM</small></div><div class="message jimmy">Yeah.</div><div class="message meenu">You’re lying.</div><div class="message jimmy">...maybe.</div><div class="message jimmy">I have one small problem.</div><div class="message meenu">Tell me.</div><div class="message jimmy">Actually it’s a long story.</div><div class="message meenu">I knew it. 😂</div><div class="message surprise-message jimmy" id="surpriseMessage">I have an important question.</div></div><button class="chat-input chat-trigger" id="chatTrigger" type="button">Tap for one more highly accurate message... <span>➤</span></button></div></section>
+    <section class="stats-section section-ink"><div class="section-heading centered"><p class="eyebrow coral">Highly scientific numbers</p><h2>Jimmy & Meenu —<br><em>friendship statistics.</em> 😂</h2></div><div class="friendship-stats"><div class="friend-stat reveal"><strong>1<span>+</span></strong><small>year of friendship</small></div><div class="friend-stat reveal"><strong>∞</strong><small>random conversations</small></div><div class="friend-stat reveal"><strong>100<span>%</span></strong><small>support</small></div><div class="friend-stat reveal"><strong>Too many</strong><small>funny moments 😂</small></div><div class="friend-stat reveal"><strong>1</strong><small>very special Meenu</small></div><div class="friend-stat reveal"><strong>1</strong><small>lucky Jimmy</small></div></div></section>
+
+    <section class="wishes section-lilac"><div class="section-heading"><p class="eyebrow">A wish for every year ahead</p><h2>21 things I wish<br>for you at <em>21.</em> ✨</h2></div><ol class="wishes-list"><li>More happiness.</li><li>More peaceful days.</li><li>More reasons to smile.</li><li>Success in your career.</li><li>Confidence in yourself.</li><li>Beautiful memories.</li><li>Good people around you.</li><li>New adventures.</li><li>Lots of laughter.</li><li>Strength during difficult days.</li><li>Dreams becoming reality.</li><li>More reasons to be proud of yourself.</li><li>Endless learning.</li><li>Personal growth.</li><li>A healthy work-life balance.</li><li>Moments you’ll remember forever.</li><li>Courage to try new things.</li><li>Peace of mind.</li><li>Success as a psychologist.</li><li>A year full of surprises.</li><li>Always stay happy and be yourself. <b>❤️</b></li></ol></section>
+
+    <section class="letter section-paper" id="letter"><div class="letter-top"><span>PRIVATE MAIL · 01</span><span>26.09.2026</span></div><div class="letter-content"><p class="eyebrow">Open when you need a reminder</p><h2>A letter<br>from <em>Jimmy.</em> 💌</h2><div class="letter-copy"><p>Dear Meenu,</p><p>Happy 21st birthday to one of the most caring, supportive, and genuinely wonderful people I know.</p><p>I’m genuinely thankful that you came into my life. In more than a year of friendship, you have become someone important to me: someone I can talk to, someone who has helped me when I needed it, and someone who has supported me through difficult times.</p><p>I appreciate our conversations — the serious ones, the random ones, and the ones that somehow become both at the same time. You have a way of making things feel a little easier, and I hope you know how much that means.</p><p>I hope 21 brings you peace, happiness, success, and the courage to chase everything you want. I hope you succeed in your psychology career, stay surrounded by good people, and keep being the kind, thoughtful person you are.</p><p>Also, thank you for being my unofficial psychologist. I’m sure your professional opinion is that I should probably stop asking for advice and then doing the opposite. I’ll work on it. Probably.</p><p>I’m grateful for this friendship, and I hope we continue it for many more years. Thank you for being Meenu. Have a beautiful birthday.</p><p>With lots of appreciation,<br><span class="letter-signature">Jimmy</span></p></div></div></section>
+
+    <section class="final-tease section-dark"><p class="eyebrow light">The last page</p><h2>Wait... there’s<br><em>one more thing</em> 👀</h2><button class="primary-button" id="lastSurprise" type="button">One last surprise <span>🎁</span></button></section>
+  </main>
+
+  <div class="final-screen" id="finalScreen" aria-hidden="true"><div class="final-sparkles" id="finalSparkles"></div><button class="close-final" id="closeFinal" type="button" aria-label="Close final surprise">×</button><div class="final-content"><p class="eyebrow light">A message from your Jimmy</p><h2>Happy 21st<br><em>Birthday, Meenu!</em> ❤️🎂</h2><p>May 21 bring you happiness, success, peace, beautiful memories, and everything you’ve been working for.</p><p>Stay amazing, keep smiling, and please keep tolerating your Jimmy. 😂❤️</p><span class="final-signature">— Jimmy</span></div></div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image">×</button><img id="lightboxImage" src="" alt="Expanded memory"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
